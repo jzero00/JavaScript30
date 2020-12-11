@@ -61,7 +61,7 @@
   window.addEventListener('keydown', playSound);
 
   function removeTransition(e) {
-    if(e.propertyName !== 'transition') return;
+    if(e.propertyName !== 'transform') return;
     console.log(e.propertyName);
     this.classList.remove('playing');
   }
